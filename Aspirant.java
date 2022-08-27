@@ -1,13 +1,22 @@
 public class Aspirant extends Student {
     String Science;
 
-    public void Student (String Ivan, String Ivanov, int Group, double averageMark, String Science){
-    super(Ivan, Ivanov, Group, averageMark);
-    this.Science = Science;
+    public Aspirant (String Ivan, String Ivanov, int group, int averageMark, String Astrology){
+    super(Ivan, Ivanov, group, averageMark);
+        this.Science = Astrology;
     }
-    double getScholarship();{
-        System.out.println("Сумма");
+    public void main(String[] args){
+        Student.getScholarship();
+        Aspirant.getScholarship();
     }
-
+    @Override
+    static void getScholarship() {
+        if (averageMark == 5) {
+            System.out.println("сумма 200 р.");
+        } else {
+            System.out.printf("сумма 180 р.");
+        }
+    }
 }
+
 
