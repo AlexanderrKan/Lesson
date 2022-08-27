@@ -1,19 +1,22 @@
-public class Student {
-    String Firstname;
+public abstract class Student {
+    String  Firstname;
     String Lastname;
-    int group;
-    int averageMark;
+    int group = 802;
+    static int averageMark = 5;
 
-    public Student(String Ivan, String Ivanov, int 802, int 5) {
+    public Student(String Ivan, String Ivanov,  int group, int averageMark) {
+
         this.Firstname = Ivan;
         this.Lastname = Ivanov;
-        this.group = 802;
-        this.averageMark = 5;
-
+        this.group = 0;
+        this.averageMark = 0;
 
     }
-
-    double getScholarship() {
+    String Firstname() {return this.Firstname;}
+    String Lastname() {return this.Lastname;}
+    int group() {return this.group;}
+    int averageMark() {return this.averageMark;}
+    static void getScholarship() {
         if (averageMark == 5) {
             System.out.println("сумма 100 р.");
         } else {
@@ -21,4 +24,7 @@ public class Student {
         }
 
     }
+
+
 }
+
