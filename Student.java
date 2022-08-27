@@ -1,26 +1,30 @@
-public abstract class Student {
+public class Student {
     String  Firstname;
     String Lastname;
     int group = 802;
-    static int averageMark = 5;
+    double averageMark = 5;
 
-    public Student(String Ivan, String Ivanov,  int group, int averageMark) {
-
+    public Student(String Ivan, String Ivanov,  int group, double averageMark) {
         this.Firstname = Ivan;
         this.Lastname = Ivanov;
-        this.group = 0;
-        this.averageMark = 0;
+        this.group = 802;
+        this.averageMark = 5;
 
     }
+
+    public Student() {
+
+    }
+
     String Firstname() {return this.Firstname;}
     String Lastname() {return this.Lastname;}
     int group() {return this.group;}
-    int averageMark() {return this.averageMark;}
-    static void getScholarship() {
+    double averageMark() {return this.averageMark;}
+    void getScholarship() {
         if (averageMark == 5) {
-            System.out.println("сумма 100 р.");
+            System.out.println("sum 100 ");
         } else {
-            System.out.printf("сумма 80 р.");
+            System.out.println("сумма 80 р.");
         }
 
     }
