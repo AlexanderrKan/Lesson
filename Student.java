@@ -1,16 +1,14 @@
 public class Student {
     String  Firstname;
     String Lastname;
-    int group = 802;
-    double averageMark = 5;
-
-    public Student(String Ivan, String Ivanov,  int group, double averageMark) {
-        this.Firstname = Ivan;
-        this.Lastname = Ivanov;
-        this.group = 802;
-        this.averageMark = 5;
-
-    }
+    int group;
+    double averageMark;
+    public Student(String firstName, String lastName, int group, double averageMark){
+        this.Firstname = firstName;
+        this.Lastname = lastName;
+        this.group = group;
+        this.averageMark = averageMark;
+        }
 
     public Student() {
 
@@ -20,6 +18,7 @@ public class Student {
     String Lastname() {return this.Lastname;}
     int group() {return this.group;}
     double averageMark() {return this.averageMark;}
+
     void getScholarship() {
         if (averageMark == 5) {
             System.out.println("sum 100 ");
