@@ -16,6 +16,7 @@ public class FileWriterReader {
         int c;
         while ((c=reader.read())!= -1){
             System.out.print((char) c);
+            reader.close();
         }
     }
 }
