@@ -15,7 +15,7 @@ public class Main extends Application{
     public void start(Stage stage) {
 
         // установка надписи
-        Text text = new Text("Hello METANIT.COM!");
+        Text text = new Text("Hello!");
         text.setLayoutY(80);    // установка положения надписи по оси Y
         text.setLayoutX(80);   // установка положения надписи по оси X
 
